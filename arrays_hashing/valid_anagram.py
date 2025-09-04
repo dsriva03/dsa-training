@@ -4,6 +4,10 @@
 
 #approach: create freq. maps of s and t, and check if they contain the same key value frequencies
 
+#time complexity: o(n) - iteration over strings is o(n), comparison is o(k)
+#space: two hashmaps in memory
+
+
 def valid_anagram(s, t):
     if len(s) != len(t):
         return False
