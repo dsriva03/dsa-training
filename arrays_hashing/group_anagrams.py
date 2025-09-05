@@ -26,3 +26,18 @@ print(group_anagrams(strs))
 
 
 # Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+
+def group_anagrams_optimized(strs):
+    dict ={}
+    for str in strs: 
+        key = [0] * 26
+        for c in str: 
+            key[ord(c) - ord('a')] += 1
+        k = tuple(key)
+        if k not in dict: 
+            dict[k] = []
+        dict[k].append(str)
+    
+    return list(dict.values())
+
