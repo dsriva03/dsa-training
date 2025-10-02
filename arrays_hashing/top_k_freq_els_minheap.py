@@ -19,3 +19,5 @@ def topKFrequent(nums, k):
 print(topKFrequent([1,1,1,2,2,3], 2))   # [1,2]
 print(topKFrequent([5,5,6,5,6,7,7,7,7], 2))  # [5,7]
 print(topKFrequent([4], 1))  # [4]
+
+
