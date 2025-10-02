@@ -1,4 +1,4 @@
-def valid_anagram_map(s, t):
+def valid_anagram_twomap(s, t):
     if len(s) != len(t):
         return False
 
