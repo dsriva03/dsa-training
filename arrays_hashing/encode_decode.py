@@ -12,16 +12,12 @@ class Codec():
         i = 0
 
         while i < len(s):
-            j = s.find("#", i)
+            j = s.find("#",i)
 
-            length = int(s[i:j])
+            word = s[j + 1: len(i: j) + 1]
 
-            word = s[j + 1 : j + 1 + length]
             res.append(word)
 
-            i = j + 1 + length
+            i = j + 1 + (len(s:j) + 1)
+        
         return res
-
-
-
-
