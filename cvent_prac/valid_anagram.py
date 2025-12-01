@@ -5,9 +5,8 @@ def valid_anagram(s, t):
     
     count = {}
 
-
     for char in s:
-        count[char] = count[char].get(0, count[char]) + 1
+        count[char] += count.get(0, char) + 1
 
     for i in range(len(s)):
         if s[i] in count:
