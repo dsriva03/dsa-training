@@ -15,3 +15,5 @@ def is_subsequence(s, t):
 print(is_subsequence("fgb", "fbg")) #false
 # print(is_subsequence("ghhd", "ruty")) #false
 # print(is_subsequence("rfg", "arjfng")) #true
+
+m[key] = (m.get(key), 0) + 1
